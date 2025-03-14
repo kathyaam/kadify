@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 img {
-    border-radius: 60%;
+    border-radius: 50%;
     }
 
     .container{
@@ -26,4 +26,113 @@ img {
     border-radius: 10px;
     width: 40%;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.salud-marina {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #0077b6;
+    color: white;
+}
+
+
+/* Gráfica mejorada */
+.grafica {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    height: 250px;
+    margin-top: 20px;
+    background: #eef5f9;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Eje Y con números */
+.eje-y {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.eje-y span {
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las barras */
+.barras {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+}
+
+/* Barras */
+.barra {
+    width: 60px;
+    background: #0077b6;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.barra:hover {
+    opacity: 0.8;
+}
+
+/* Colores de alerta */
+.barra.rojo {
+    background: red;
+}
+
+.barra.verde {
+    background: green;
+}
+
+/* Etiquetas sobre las barras */
+.etiqueta {
+    position: absolute;
+    top: -25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
 }
