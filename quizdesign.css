@@ -1,0 +1,46 @@
+.btn-primary {
+    width: 70%;
+    max-width: 150px;
+}
+
+.card p-4 mb-2{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 250px;
+}
+
+.history-image{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.big-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.title2{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+body {
+    background-color: rgb(238, 236, 221);
+}
+
+.title3{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.thequestion{
+    font-size: large;
+    font-style: italic;
+}
