@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección Informativa y Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="quizdesign.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center big-title">Conoce sobre el Canal de Panama</h1>
+        
+        <div class="card p-4 mb-4">
+            <h3 class="text-center"><em>Una breve vista a la construccion de nuestro Canal</em></h3>
+            <p class="text-center">La construcción del Canal de Panamá marcó un antes y un después en nuestra historia. Como panameños, vivimos de cerca todo el proceso, desde los primeros intentos hasta la recuperación de nuestra soberanía sobre esta vía crucial para el comercio mundial.</p>
+            <h4>El intento francés y sus dificultades (1881-1889)</h4>
+            <p>Los franceses, liderados por Ferdinand de Lesseps, intentaron construir un canal a nivel, pero enfrentaron enormes desafíos. La selva, las enfermedades y la falta de planificación causaron la muerte de miles de trabajadores, muchos de ellos nuestros compatriotas y hermanos caribeños. Su esfuerzo y sacrificio quedaron grabados en la historia.</p>
+            <h4>El papel de Estados Unidos y nuestra separación de Colombia (1903-1914)</h4>
+            <p>Con el fracaso francés, Estados Unidos vio la oportunidad de tomar el proyecto. En medio de estos acontecimientos, logramos nuestra separación de Colombia en 1903, aunque bajo un tratado que nos impuso la cesión de la Zona del Canal a los estadounidenses. Durante la construcción, se implementaron medidas de sanidad y tecnología avanzada, lo que permitió completar la obra. El 15 de agosto de 1914, el Canal de Panamá fue inaugurado, pero no por nosotros, sino bajo control extranjero.</p>
+            <h4>Nuestra lucha por la soberanía y la recuperación del Canal (1999)</h4>
+            <p>Por casi un siglo, vivimos bajo la presencia estadounidense en nuestro propio territorio, lo que generó protestas y una lucha constante por la recuperación de nuestra soberanía. Gracias a la valentía de generaciones de panameños, en 1977 se firmaron los Tratados Torrijos-Carter, que establecieron la devolución del canal a Panamá. Finalmente, el 31 de diciembre de 1999, el Canal pasó a nuestras manos.
+                Hoy, administramos esta gran obra a través de la Autoridad del Canal de Panamá, y la convertimos en una fuente de desarrollo y orgullo nacional. ¡El Canal de Panamá es nuestro y lo cuidamos para las futuras generaciones!</p>
+        </div>
+        
+    <div class="container mt-5">
+        
+        <div class="card p-4 mb-4">
+            <h3 class="text-center title2">Comparacion de la biodiversidad</h3>
+            <h3 class="text-center"><em>Antes</em></h3>
+            <p class="text-center">Antes de la construcción del Canal de Panamá, el área estaba cubierta por una densa selva tropical con una biodiversidad abundante. La región albergaba una gran variedad de especies de flora y fauna, muchas de las cuales eran endémicas. Sin embargo, la excavación, la deforestación y la inundación de grandes áreas para la creación del lago Gatún alteraron drásticamente el ecosistema.</p>
+            <img src="old canal.jpg" alt="Imagen del Canal de Panama al inicio de construccion" class="history-image">
+            <h3 class="text-center"><em>Después</em></h3>
+            <p class="text-center"> Durante y después de la construcción, muchas especies perdieron su hábitat, y algunas fueron desplazadas o desaparecieron localmente. Sin embargo, la creación del Lago Gatún y la conservación de ciertas áreas alrededor del canal ayudaron a mantener corredores biológicos. Con la administración panameña desde 1999, se ha reforzado la protección ambiental y la conservación de bosques, permitiendo la recuperación de algunas especies y asegurando un equilibrio entre el desarrollo y la biodiversidad.</p>
+            <img src="new canal.jpg" alt="Imagen del Canal de Panama actual" class="history-image">
+        </div>
+
+        <div class="card p-4 mb-4">
+            <h2 class="text-center title3">Quiz del Canal de Panama</h2>
+            <p class="thequestion">¿Qué país intentó construir el Canal de Panamá antes de Estados Unidos?</p>
+            <form id="quizForm">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="quiz1" value="España"> España
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="quiz1" value="Reino Unido"> Reino Unido
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="quiz1" value="Francia"> Francia
+                </div>
+            <button type="button" class="btn btn-primary btn-lg mt-3" 
+                onclick="checkAnswer('quiz1', 'Francia', 'result1')">Verificar</button>
+            <p id="result1" class="mt-3 fw-bold"></p>            
+        </div>
+    </div>
+    
+    <script>
+        function checkAnswer(questionName, correctAnswer, resultId) {
+            let answer = document.querySelector(`input[name="${questionName}"]:checked`);
+            let result = document.getElementById(resultId);
+            
+            if (answer && answer.value === correctAnswer) {
+                result.textContent = "✅ ¡Correcto!";
+                result.classList.remove("text-danger");
+                result.classList.add("text-success");
+            } else {
+                result.textContent = "❌ Respuesta incorrecta. Inténtalo de nuevo.";
+                result.classList.remove("text-success");
+                result.classList.add("text-danger");
+            }
+        }
+    </script>    
+
+    <div class="card p-4 mb-4">
+    <p class="thequestion">¿En qué año Panamá recuperó el control total del Canal de Panamá?</p>
+            <form id="quizForm">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="quiz2" value="1997"> 1997
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="quiz2" value="2003"> 2003
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="quiz2" value="1999"> 1999
+                </div>
+            <button type="button" class="btn btn-primary btn-lg mt-3" 
+                onclick="checkAnswer('quiz2', '1999', 'result2')">Verificar</button>
+            <p id="result2" class="mt-3 fw-bold"></p>
+            
+            
+    </div>
+    
+    <script>
+        function checkAnswer(questionName, correctAnswer, resultId) {
+            let answer = document.querySelector(`input[name="${questionName}"]:checked`);
+            let result = document.getElementById(resultId);
+            
+            if (answer && answer.value === correctAnswer) {
+                result.textContent = "✅ ¡Correcto!";
+                result.classList.remove("text-danger");
+                result.classList.add("text-success");
+            } else {
+                result.textContent = "❌ Respuesta incorrecta. Inténtalo de nuevo.";
+                result.classList.remove("text-success");
+                result.classList.add("text-danger");
+            }
+        }
+    </script>
+    
+
+    <div class="card p-4 mb-4">
+        <p class="thequestion">¿Cuál fue uno de los principales efectos ambientales de la construcción del canal?</p>
+                <form id="quizForm">
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="quiz3" value="Aumento de la biodiversidad en la zona"> Aumento de la biodiversidad en la zona
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="quiz3" value="Desaparición total de todas las especies nativas"> Desaparición total de todas las especies nativas
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="quiz3" value="Deforestación y pérdida de hábitats naturales"> Deforestación y pérdida de hábitats naturales
+                    </div>
+            <button type="button" class="btn btn-primary btn-lg mt-3" 
+                onclick="checkAnswer('quiz3', 'Deforestación y pérdida de hábitats naturales', 'result3')">Verificar</button>
+            <p id="result3" class="mt-3 fw-bold"></p>
+                
+
+    </div>
+        
+    <script>
+        function checkAnswer(questionName, correctAnswer, resultId) {
+            let answer = document.querySelector(`input[name="${questionName}"]:checked`);
+            let result = document.getElementById(resultId);
+            
+            if (answer && answer.value === correctAnswer) {
+                result.textContent = "✅ ¡Correcto!";
+                result.classList.remove("text-danger");
+                result.classList.add("text-success");
+            } else {
+                result.textContent = "❌ Respuesta incorrecta. Inténtalo de nuevo.";
+                result.classList.remove("text-success");
+                result.classList.add("text-danger");
+            }
+        }
+    </script>
+        
+</body>
+</html>
+
+</body>
+</html>
