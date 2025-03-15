@@ -137,16 +137,14 @@ th {
     }
 
 /* Estilos para la sección de fauna del Canal de Panamá */
-.fauna-canal {
-    background-color: #f0f8ff;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 40px auto;
-    max-width: 900px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.fauna-canal{
+    color: #256154;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.fauna-canal h2 {
+.h2 {
     color: #256154;
     text-align: center;
     margin-bottom: 20px;
@@ -165,7 +163,7 @@ th {
     gap: 20px;
 }
 
-.fauna-canal .col-md-4 {
+.col-md-4{
     text-align: center;
     background-color: #f2e6cf;
     padding: 20px;
