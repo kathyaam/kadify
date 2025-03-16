@@ -14,7 +14,7 @@
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #5cc1c3;">
         <div class="container-fluid">
             <nav class="navbar">
             <div class="container">
@@ -23,24 +23,24 @@
                 </a>
             </div>
             </nav>
-            <a class="navbar-brand" href="#">Visitar el canal</a>
+            <a class="navbar-brand" href="#visitar" style="color: #eefdfd;">Visitar el canal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Salud marina</a>
+                    <a class="nav-link active" style="color: #eefdfd;" aria-current="page" href="#" >Salud marina</a>
                 </li>
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" style="color: #eefdfd;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Sección informativa
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Guía de biodiversidad</a></li>
-                    <li><a class="dropdown-item" href="#">Recomendaciones turísticas</a></li>
+                    <li><a class="dropdown-item" href="#fauna" style="color: #5cc1c3;">Guía de biodiversidad</a></li>
+                    <li><a class="dropdown-item" href="#" style="color: #5cc1c3;">Recomendaciones turísticas</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Quiz</a></li>
+                    <li><a class="dropdown-item" href="quiz-info.html" style="color: #5cc1c3;">Quiz</a></li>
                 </ul>
                 </li>
             </ul>
@@ -52,11 +52,11 @@
         </div>
     </nav>
 
-    <main>
+    <main class="main">
         <!--horarios y precios-->
-        <section>
+        <section id="visitar">
             <h1 class="titulo">¿Quieres visitar el Canal de Panamá?</h1>
-            <h6 class="texto1">CanalFlow esta hecho para mejorar tu experiencia al visitar esta maravilla arquitectónica.</h6>
+            <h6 class="texto1" style="color: #256154;">CanalFlow esta hecho para mejorar tu experiencia al visitar esta maravilla arquitectónica.</h6>
             <div class="container text-center">
                 <div class="container">
                     <div class="box">
@@ -71,10 +71,23 @@
             </div>
         </section>
         
+        <!--dato del dia-->
+        <section class="overview">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100 text-center fs-4" style="color: #256154;">
+                    <div class="col-l">
+                    <i class="bi bi-lightbulb"></i>
+                        Dato curioso: El primer barco que cruzó el canal fue el Ancón, que transportaba cemento para la construcción. 
+                    </div>
+                </div>  
+            </div>
+        </section>
+
         <!--info marina-->
         <section class="salud-marina">
-            <h1>📊 Panel de Salud Marina</h1>
-            <p>Datos en tiempo real sobre los niveles de agua en los Lagos .</p>
+            <h1 style="color: #256154;">📊 Panel de Salud Marina</h1>
+            <p style="color: #256154;">Datos en tiempo real sobre los Niveles en Pies de los Lagos en el Canal de Panamá.</p>
+    
             <div class="contenedor">
                 <!-- Tabla de datos -->
                 <table>
@@ -99,58 +112,93 @@
                     </tbody>
                 </table>
             </div>
-                <!-- Gráfica mejorada -->
-            <div class="grafica">
-                <!-- Números del eje Y -->
-                <div class="eje-y">
-                    <span>100%</span>
-                    <span>75%</span>
-                    <span>50%</span>
-                    <span>25%</span>
-                    <span>0%</span>
+                <!-- 📌 Primera Gráfica: Calidad del Agua -->
+                <h2 style="color: #256154;">🌊 Lago Gatun</h2>
+                <div class="grafica lago gatun">
+                    <div class="eje-y">
+                        <span>90</span>
+                        <span>87</span>
+                        <span>83</span>
+                        <span>79</span>
+                        <span>76</span>
+                    </div>
+                    <div class="barras">
+                        <div class="barra verde" style="height: 87.99%;" title="Óptimo">
+                            <span class="etiqueta">Óptimo: 87.99 pies</span>
+                        </div>
+                        <div class="barra azul" style="height: 87.07%;" title="Actual">
+                            <span class="etiqueta">Actual: 87.07 pies</span>
+                        </div>
+                    </div>
                 </div>
-                <!-- Gráfica de barras simulada -->
-                <div class="grafica">
-                    <div class="barra" style="height: 87.99%;" title="Óptimo: 87.99 pies"></div>
-                    <div class="barra verde" style="height: 87.12%;" title="Actual: 87.13"></div>
-                </div>
-                <div class="grafica">
-                    <div class="barra" style="height: 51.97%;" title="Óptimo: 251.97 pies"></div>
-                    <div class="barra verde" style="height: 35.99%;" title="Actual: 235.99"></div>
+    
+                <!-- 📌 Segunda Gráfica -->
+                <h2 style="color: #256154;">💧Lago Alhajuela</h2>
+                <div class="grafica lago Alhajuela">
+                    <div class="eje-y">
+                        <span>260</span>
+                        <span>250</span>
+                        <span>240</span>
+                        <span>230</span>
+                        <span>220</span>
+                        <span>200</span>
+                    </div>
+                    <div class="barras">
+                        <div class="barra verde" style="height: 81%;" title="Óptimo">
+                            <span class="etiqueta">Óptimo: 251.97 pies</span>
+                        </div>
+                        <div class="barra azul" style="height: 48%;" title="Actual">
+                            <span class="etiqueta">Actual: 234.82 pies</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Sección sobre la fauna del Canal de Panamá -->
-        <section class="fauna-canal" style="background-color: #f0f8ff; border-radius: 10px;">
-            <div class="container">
-                <h2 class="text-center">🐾 Fauna del Canal de Panamá</h2>
-                <p class="text-center">El Canal de Panamá alberga una gran diversidad de especies animales, muchas de ellas únicas en la región.</p>
-                
-                <!-- introducción -->
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <img src="https://translate.google.com/website?sl=en&tl=es&hl=es&client=sge&u=https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Geoffroy%2527s_tamarin_%2528Saguinus_geoffroyi%2529_2.jpg/330px-Geoffroy%2527s_tamarin_%2528Saguinus_geoffroyi%2529_2.jpg" alt="Tití de Geoffroy" class="img-fluid rounded">
+        <section id="fauna" class="fauna-canal" style="background-color: #cbf5f5; border-radius: 10px;">
+                    <h2 class="text-center" style="color: #256154;">🐾 Fauna del Canal de Panamá</h2>
+                    <h6 class="text-center" style="color: #256154;">El Canal de Panamá alberga una gran diversidad de especies animales, muchas de ellas únicas en la región.</h6>
+                <!-- introducción --> 
+                <div class="container">
+                    <div class="box-b">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Saguinus_geoffroyi_Colombia.JPG" alt="Tití de Geoffroy" class="img-fluid rounded">
                         <h4>Tití de Geoffroy</h4>
                         <p>Un pequeño primate que habita en los bosques cercanos al canal.</p>
                         <a href="https://www.globalnationalparks.com/es/panama/altos-de-campana/">¡Encuentralo también en el parque nacional Altos de Campana!</a>
                         <!-- el primer animal, una imagen y su pequeña descripción-->
                     </div>
-                    <div class="col-md-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Cocodrilo_de_R%C3%ADo.JPG/330px-Cocodrilo_de_R%C3%ADo.JPG" alt="Cocodrilo Americano" class="img-fluid rounded">
-                        <h4>Cocodrilo Americano</h4>
-                        <p>Frecuente en las orillas del canal, este reptil es un gran depredador de la zona.</p>
-                        <a href="https://es.tourismpanama.com/aire-libre-y-naturaleza/parques-naturales/parques-nacionales/parque-nacional-soberania/">¡Encuentralo también en el parque nacional Soberanía!</a>
-                        <!-- el segundo animal, una imagen y su pequeña descripción-->
+                    <div class="container">
+                        <div class="box-b">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Cocodrilo_de_R%C3%ADo.JPG/330px-Cocodrilo_de_R%C3%ADo.JPG" alt="Cocodrilo Americano" class="img-fluid rounded">
+                            <h4>Cocodrilo Americano</h4>
+                            <p>Frecuente en las orillas del canal, este reptil es un gran depredador de la zona.</p>
+                            <a href="https://es.tourismpanama.com/aire-libre-y-naturaleza/parques-naturales/parques-nacionales/parque-nacional-soberania/">¡Encuentralo también en el parque nacional Soberanía!</a>
+                            <!-- el segundo animal, una imagen y su pequeña descripción-->
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="https://wildexpedition.com/wp-content/uploads/2023/10/Harpia-689x459.jpg.webp" alt="Águila Harpía" class="img-fluid rounded">
-                        <h4>Águila Harpía</h4>
-                        <p>El ave nacional de Panamá y uno de los depredadores más impresionantes de la región.</p>
-                        <a href="https://es.tourismpanama.com/aire-libre-y-naturaleza/parques-naturales/parques-nacionales/parque-nacional-soberania/">¡Encuentralo también en el parque nacional Soberanía!</a>
-                        <!-- el tercer animal, una imagen y su pequeña descripción-->
+                    <div class="container">
+                        <div class="box-b">
+                            <img src="https://wildexpedition.com/wp-content/uploads/2023/10/Harpia-689x459.jpg.webp" alt="Águila Harpía" class="img-fluid rounded">
+                            <h4>Águila Harpía</h4>
+                            <p>El ave nacional de Panamá y uno de los depredadores más impresionantes de la región.</p>
+                            <a href="https://es.tourismpanama.com/aire-libre-y-naturaleza/parques-naturales/parques-nacionales/parque-nacional-soberania/">¡Encuentralo también en el parque nacional Soberanía!</a>
+                            <!-- el tercer animal, una imagen y su pequeña descripción-->
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!--recordatorio del quiz-->
+        <section class="overview">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100 text-center fs-4" style="color: #256154;">
+                    <div class="col-l">
+                        <i class="bi bi-exclamation-octagon-fill"></i>
+                        ¡No te olvides! Para jugar nuestro quiz y ganar únicos premios, ve a la sección de arriba y clickea en "Sección informativa"
+                    </div>
+                </div>  
             </div>
         </section>
     </main>

@@ -1,3 +1,10 @@
+.main{
+    background-color: #eefdfd;
+}
+
+.navbar{
+    height: 120px;
+}
 
 .titulo{
     color: #256154;
@@ -25,8 +32,11 @@ img {
     padding: 25px;
     border-radius: 10px;
     width: 40%;
+    height: 100%;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3%;
 }
+
 
 
 .salud-marina {
@@ -36,6 +46,12 @@ img {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* dato del dia*/
+.overview{
+    height: 100px;
+    background-color: #cbf5f5;
 }
 
 /* Estilos de la tabla */
@@ -57,21 +73,22 @@ th {
 }
 
 
-/* Gráfica mejorada */
+/* 📌 Gráficas generales */
 .grafica {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     position: relative;
     height: 250px;
-    margin-top: 20px;
+    margin: 20px auto;
     background: #eef5f9;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
+    width: 80%;
 }
 
-/* Eje Y con números */
+/* 📌 Eje Y */
 .eje-y {
     display: flex;
     flex-direction: column;
@@ -87,7 +104,7 @@ th {
     margin-bottom: 20px;
 }
 
-/* Contenedor de las barras */
+/* 📌 Barras generales */
 .barras {
     display: flex;
     align-items: flex-end;
@@ -96,10 +113,8 @@ th {
     height: 100%;
 }
 
-/* Barras */
 .barra {
     width: 60px;
-    background: #0077b6;
     border-radius: 5px;
     position: relative;
     display: flex;
@@ -112,81 +127,30 @@ th {
     opacity: 0.8;
 }
 
-/* Colores de alerta */
-.barra.rojo {
-    background: red;
+/* 📌 Colores de barras */
+.barra.azul {
+    background: #0077b6;
 }
-
 .barra.verde {
     background: green;
 }
 
-/* Etiquetas sobre las barras */
+/* 📌 Etiquetas sobre las barras */
 .etiqueta {
     position: absolute;
-    top: -25px;
+    top: -63px;
     font-size: 14px;
     font-weight: bold;
     color: #333;
 }
 
-/* Responsividad */
-@media (max-width: 600px) {
-    table {
-        font-size: 14px;
+
+    .box-b{
+        color: #256154;
+        background-color: #f2e6cf;
+        padding: 25px;
+        border-radius: 10px;
+        width: 80%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
     }
-
-/* Estilos para la sección de fauna del Canal de Panamá */
-.fauna-canal{
-    color: #256154;
-    margin-left: 80px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.h2 {
-    color: #256154;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.fauna-canal p {
-    text-align: center;
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.fauna-canal .row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.col-md-4{
-    text-align: center;
-    background-color: #f2e6cf;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.fauna-canal img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.fauna-canal h4 {
-    color: #256154;
-    margin-top: 10px;
-}
-
-.fauna-canal p {
-    font-size: 14px;
-    color: #555;
-}
-
-}
