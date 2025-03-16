@@ -155,6 +155,54 @@
             </div>
         </section>
 
+        <!-- salud marina -->
+        <section class="conservacion-marina">
+            <h1 style="color: #256154;">🌊 Conservación Marina en el Canal de Panamá</h1>
+            <p style="color: #256154;">Descubre cómo podemos proteger la biodiversidad marina en el Canal de Panamá.</p>
+    
+            <div class="contenedor-tarjetas">
+                <!-- Tarjeta 1 -->
+                <div class="tarjeta">
+                    <img src="https://efeagro.com/wp-content/uploads/2018/06/animal-aquatic-corals-847393.jpg" alt="Biodiversidad marina">
+                    <h2>Protección de la Biodiversidad</h2>
+                    <p>El Canal alberga especies únicas. La contaminación y el tráfico marítimo afectan su hábitat.</p>
+                    <button onclick="mostrarMas(1)">Ver más</button>
+                    <div class="info-extra" id="info-1">
+                        <p>Las áreas protegidas como el Parque Nacional Chagres ayudan a mantener el equilibrio ecológico.</p>
+                    </div>
+                </div>
+    
+                <!-- Tarjeta 2 -->
+                <div class="tarjeta">
+                    <img src="https://st2.depositphotos.com/1017187/8170/i/950/depositphotos_81700726-stock-photo-colon-panama-april-15-2015.jpg" alt="Contaminación marina">
+                    <h2>Reducción de Contaminación</h2>
+                    <p>El plástico y los residuos industriales afectan la calidad del agua y la vida marina.</p>
+                    <button onclick="mostrarMas(2)">Ver más</button>
+                    <div class="info-extra" id="info-2">
+                        <p>Podemos ayudar reduciendo plásticos de un solo uso y apoyando limpiezas comunitarias.</p>
+                    </div>
+                </div>
+    
+                <!-- Tarjeta 3 -->
+                <div class="tarjeta">
+                    <img src="https://www.fishipedia.es/wp-content/uploads/2019/08/Tarpon-Megalops-atlanticus-2-725x483.jpg" alt="Especies invasoras">
+                    <h2>Control de Especies Invasoras</h2>
+                    <p>La expansión del Canal ha permitido la entrada de especies que afectan a las nativas.</p>
+                    <button onclick="mostrarMas(3)">Ver más</button>
+                    <div class="info-extra" id="info-3">
+                        <p>El sábalo del Atlántico, por ejemplo, ha aumentado su presencia en el Canal, desplazando especies locales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <script>
+            function mostrarMas(id) {
+                let info = document.getElementById("info-" + id);
+                info.style.display = info.style.display === "block" ? "none" : "block";
+            }
+        </script>
+
         <!-- Sección sobre la fauna del Canal de Panamá -->
         <section id="fauna" class="fauna-canal" style="background-color: #cbf5f5; border-radius: 10px;">
                     <h2 class="text-center" style="color: #256154;">🐾 Fauna del Canal de Panamá</h2>
@@ -165,7 +213,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Saguinus_geoffroyi_Colombia.JPG" alt="Tití de Geoffroy" class="img-fluid rounded">
                         <h4>Tití de Geoffroy</h4>
                         <p>Un pequeño primate que habita en los bosques cercanos al canal.</p>
-                        <a href="https://www.globalnationalparks.com/es/panama/altos-de-campana/">¡Encuentralo también en el parque nacional Altos de Campana!</a>
+                        <a href="https://www.globalnationalparks.com/es/panama/altos-de-campana/">¡Visítame en el parque nacional Altos de Campana!</a>
                         <!-- el primer animal, una imagen y su pequeña descripción-->
                     </div>
                     <div class="container">
@@ -173,7 +221,7 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Cocodrilo_de_R%C3%ADo.JPG/330px-Cocodrilo_de_R%C3%ADo.JPG" alt="Cocodrilo Americano" class="img-fluid rounded">
                             <h4>Cocodrilo Americano</h4>
                             <p>Frecuente en las orillas del canal, este reptil es un gran depredador de la zona.</p>
-                            <a href="https://es.tourismpanama.com/aire-libre-y-naturaleza/parques-naturales/parques-nacionales/parque-nacional-soberania/">¡Encuentralo también en el parque nacional Soberanía!</a>
+                            <a href="https://es.tourismpanama.com/aire-libre-y-naturaleza/parques-naturales/parques-nacionales/parque-nacional-soberania/">¡Visítame en el parque nacional Soberanía!</a>
                             <!-- el segundo animal, una imagen y su pequeña descripción-->
                         </div>
                     </div>
@@ -182,7 +230,7 @@
                             <img src="https://wildexpedition.com/wp-content/uploads/2023/10/Harpia-689x459.jpg.webp" alt="Águila Harpía" class="img-fluid rounded">
                             <h4>Águila Harpía</h4>
                             <p>El ave nacional de Panamá y uno de los depredadores más impresionantes de la región.</p>
-                            <a href="https://es.tourismpanama.com/aire-libre-y-naturaleza/parques-naturales/parques-nacionales/parque-nacional-soberania/">¡Encuentralo también en el parque nacional Soberanía!</a>
+                            <a href="https://es.tourismpanama.com/aire-libre-y-naturaleza/parques-naturales/parques-nacionales/parque-nacional-soberania/">¡Visítame en el parque nacional Soberanía!</a>
                             <!-- el tercer animal, una imagen y su pequeña descripción-->
                         </div>
                     </div>
