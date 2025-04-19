@@ -14,7 +14,7 @@
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg" style="background-color: #6ebab6;">
+    <nav class="navbar navbar-expand-lg" style="background: linear-gradient(145deg, #6ab7d1, #00b3b3);">
         <div class="container-fluid">
             <nav class="navbar">
             <div class="container">
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" style="color: #eefdfd;" aria-current="page" href="#" >Salud marina</a>
+                    <a class="nav-link active" style="color: #eefdfd;" aria-current="page" href="#salud-marina" >Salud marina</a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" style="color: #eefdfd;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,7 +38,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#fauna" style="color: #5cc1c3;">Guía de biodiversidad</a></li>
-                    <li><a class="dropdown-item" href="#" style="color: #5cc1c3;">Recomendaciones turísticas</a></li>
+                    <li><a class="dropdown-item" href="#Recomendaciones" style="color: #5cc1c3;">Recomendaciones turísticas</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="quiz-info.html" style="color: #5cc1c3;">Quiz</a></li>
                 </ul>
@@ -53,13 +53,13 @@
     </nav>
     <!--Bienvenida-->
     <body>
-        <div class="welcome-container">
+        <div class="welcome-container" id="inicio">
             <div class="overlay"></div>
             <img src="c:\Users\mx\OneDrive\Pictures\barco5.png" alt="barco" class="barco">
                 <div class="content">
-                <h1>¡Bienvenido a CanalFlow!</h1>
-                <p>Descubre la biodiversidad y maravillas del Canal de Panamá</p>
-                <button href="#visitar">Explorar</button>
+                    <h1>¡Bienvenido a CanalFlow!</h1>
+                    <p>Descubre la biodiversidad y maravillas del Canal de Panamá</p>
+                    <button href="#visitar">Explorar</button>
                 </div>
         </div>
     </body>
@@ -82,6 +82,7 @@
                             <li>Boletería: Todos los días: 8:00 a.m. - 3:30 p.m.</li>
                             <li>Atención: Todos los días 8:00 am - 5:00 pm</li>
                         </ul>
+                        <a href="" style="color: #eefdfd;">Presiona aquí para agendar tu visita.</a>
                     </div>
                 <div class="schedule">
                     <div class="box">
@@ -97,6 +98,7 @@
                             <li>Nacionales y residentes hasta 18 años, gratis.</li>
                             <li>Nacionales y residentes arriba de 19 años, $3.00</li>
                             <li>No residentes desde $5.00 hasta $10.00.</li>
+                            <a href="" style="color: #eefdfd;">Presiona aquí para agendar tu visita.</a>
                         </ul>
                     </div>
                 </div>
@@ -117,7 +119,7 @@
         </section>
 
         <!--info marina-->
-        <section class="salud-marina">
+        <section class="salud-marina" id="salud-marina">
             <h1 style="color: #256154;">📊 Panel de Salud Marina</h1>
             <p style="color: #256154;">Datos en tiempo real sobre los Niveles en Pies de los Lagos en el Canal de Panamá.</p>
     
@@ -188,56 +190,116 @@
             </div>
         </section>
 
-        <!-- salud marina -->
-        <section class="conservacion-marina">
+        <!--conversarvion marina -->
+        <section class="conservacion-marina" id="fauna">
             <h1 style="color: #256154;">🌊 Conservación Marina en el Canal de Panamá</h1>
-            <p style="color: #256154;">Descubre cómo podemos proteger la biodiversidad marina en el Canal de Panamá.</p>
-    
-            <div class="contenedor-tarjetas">
-                <!-- Tarjeta 1 -->
-                <div class="tarjeta">
-                    <img src="https://efeagro.com/wp-content/uploads/2018/06/animal-aquatic-corals-847393.jpg" alt="Biodiversidad marina">
-                    <h2>Protección de la Biodiversidad</h2>
-                    <p>El Canal alberga especies únicas. La contaminación y el tráfico marítimo afectan su hábitat.</p>
-                    <button onclick="mostrarMas(1)">Ver más</button>
-                    <div class="info-extra" id="info-1">
-                        <p>Las áreas protegidas como el Parque Nacional Chagres ayudan a mantener el equilibrio ecológico.</p>
+            <p style="color: #256154;">Explora las categorías para aprender más sobre cómo proteger nuestros ecosistemas.</p>
+            <div class="contenedor-categorias">
+            <!-- 📂 Categoría: Biodiversidad -->
+            <section class="categoria-carrusel">
+                <h2 style="color: #256154;">🌿 Biodiversidad marina</h2>
+                <div class="carrusel-contenedor">
+                    <div class="carrusel">
+                    <div class="item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Cocodrilo_de_R%C3%ADo.JPG/330px-Cocodrilo_de_R%C3%ADo.JPG" alt="Cocodrilo Americano">
+                        <h3 style="color: #256154;">Cocodrilo Americano</h3>
+                        <p>Frecuente en las orillas del canal, este reptil es un gran depredador de la zona.</p>
+                    </div>
+                    <div class="item">
+                        <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/173261823/original.jpg" alt="Manatí del Caribe">
+                        <h3 style="color: #256154;">Manatí del Caribe</h3>
+                        <p>En peligro, depende de aguas limpias.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://images.rove.me/w_1920,q_85/birozlko0ralsd3ezvbq/panama-watching-sea-turtles.jpg" alt="Tortuga Marina">
+                        <h3 style="color: #256154;">Tortuga Marina</h3>
+                        <p>El plástico representa un gran peligro.</p>
+                    </div>
+
+                    <div class="item ayuda">
+                        <img src="https://www.fao.org/images/newsroomlibraries/stories-images/8639c087ea4a6d2744b295c5fc6441ff.jpg?sfvrsn=4ef38d78_10" alt="Ayuda">
+                        <h3 style="color: #256154;">¿Cómo puedes ayudar?</h3>
+                        <ul>
+                        <li>🚯 No dejes basura en playas/ríos.</li>
+                        <li>📸 Reporta especies con apps.</li>
+                        <li>🎓 Comparte información local.</li>
+                        </ul>
+                    </div>
+
                     </div>
                 </div>
-    
-                <!-- Tarjeta 2 -->
-                <div class="tarjeta">
-                    <img src="https://st2.depositphotos.com/1017187/8170/i/950/depositphotos_81700726-stock-photo-colon-panama-april-15-2015.jpg" alt="Contaminación marina">
-                    <h2>Reducción de Contaminación</h2>
-                    <p>El plástico y los residuos industriales afectan la calidad del agua y la vida marina.</p>
-                    <button onclick="mostrarMas(2)">Ver más</button>
-                    <div class="info-extra" id="info-2">
-                        <p>Podemos ayudar reduciendo plásticos de un solo uso y apoyando limpiezas comunitarias.</p>
+                </section>
+
+                <section class="categoria-carrusel">
+                    <h2 style="color: #256154;">🧪 Contaminación</h2>
+                    <div class="carrusel-contenedor">
+                        <div class="carrusel">
+                        <div class="item">
+                            <img src="https://www.trabajadores.cu/wp-content/uploads/2020/09/MA200929-PL%C3%81STICO-Foto-2.jpg" alt="Plástico">
+                            <h3 style="color: #256154;">Contaminación Plástica</h3>
+                            <p>Botellas, bolsas y microplásticos afectan fauna marina.</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://prensa.com/resizer/v2/QKZ3LTGBSZDHZDI6N757W4CCHA.jpg?auth=d66c484c4f9d3215567f5a657133083cdb9bb33cf97cd548946ae799b7688f5e&width=1200" alt="Petróleo">
+                            <h3 style="color: #256154;">Derrames de Petróleo</h3>
+                            <p>Contaminan el agua, matan peces y aves acuáticas.</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://elpilon.com.co/wp-content/uploads/2021/09/WhatsApp-Image-2021-09-28-at-4.55.18-PM.jpeg" alt="Aguas residuales">
+                            <h3 style="color: #256154;">Aguas Residuales</h3>
+                            <p>Sin tratamiento, pueden causar enfermedades y destruir hábitats.</p>
+                        </div>
+                        <div class="item ayuda">
+                            <img src="https://elfarodelcanal.com/wp-content/uploads/2022/09/efd-ff06-4ef5-8f52-832fadfd26b4-p-1024x682.jpg" alt="Acción ciudadana">
+                            <h3 style="color: #256154;">¿Cómo puedes ayudar?</h3>
+                            <ul>
+                            <li>♻️ Reduce el uso de plásticos de un solo uso.</li>
+                            <li>🧼 No viertas aceites o químicos en desagües.</li>
+                            <li>🧹 Participa en limpiezas comunitarias.</li>
+                            <li>📢 Exige tratamiento adecuado de aguas a las autoridades.</li>
+                            </ul>
+                        </div>
+                        </div>
                     </div>
-                </div>
-    
-                <!-- Tarjeta 3 -->
-                <div class="tarjeta">
-                    <img src="https://www.fishipedia.es/wp-content/uploads/2019/08/Tarpon-Megalops-atlanticus-2-725x483.jpg" alt="Especies invasoras">
-                    <h2>Control de Especies Invasoras</h2>
-                    <p>La expansión del Canal ha permitido la entrada de especies que afectan a las nativas.</p>
-                    <button onclick="mostrarMas(3)">Ver más</button>
-                    <div class="info-extra" id="info-3">
-                        <p>El sábalo del Atlántico, por ejemplo, ha aumentado su presencia en el Canal, desplazando especies locales.</p>
+                </section>
+                
+                    <!-- 🐟 CARRUSEL ESPECIES INVASORAS -->
+                    <section class="categoria-carrusel">
+                    <h2 style="color: #256154;">🐟 Especies Invasoras</h2>
+                    <div class="carrusel-contenedor">
+                        <div class="carrusel">
+                        <div class="item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Tarpon3.JPG" alt="Sábalo del Atlántico">
+                            <h3 style="color: #256154;">Sábalo del Atlántico</h3>
+                            <p>Se ha expandido por el Canal, desplazando especies nativas.</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://uvn-brightspot.s3.amazonaws.com/assets/vixes/btg/curiosidades.batanga.com/files/Especies-invasoras-el-Pez-Leon.jpg" alt="Pez León">
+                            <h3 style="color: #256154;">Pez León</h3>
+                            <p>Depredador exótico con espinas venenosas.</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://s1.ppllstatics.com/ideal/www/multimedia/202104/03/media/cortadas/alga-invasora-puerto-aguadulce-kHED-U1301029415964WzD-1248x770@Ideal.jpg" alt="Alga invasora">
+                            <h3 style="color: #256154;">Alga Marina Invasora</h3>
+                            <p>Crece rápido, bloquea luz solar y ahoga otras plantas.</p>
+                        </div>
+                        <div class="item ayuda">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aGVscHxlbnwwfHwwfHx8MA%3D%3D" alt="Control">
+                            <h3 style="color: #256154;">¿Cómo puedes ayudar?</h3>
+                            <ul>
+                            <li>📲 Reporta especies extrañas al Ministerio de Ambiente.</li>
+                            <li>🚫 No liberes mascotas acuáticas en cuerpos de agua.</li>
+                            <li>🎣 Participa en jornadas de control de invasoras.</li>
+                            <li>📚 Infórmate y difunde el impacto ecológico.</li>
+                            </ul>
+                        </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    
-        <script>
-            function mostrarMas(id) {
-                let info = document.getElementById("info-" + id);
-                info.style.display = info.style.display === "block" ? "none" : "block";
-            }
-        </script>
+                    </section>
 
         <!-- Sección sobre la fauna del Canal de Panamá -->
-        <section id="fauna" class="fauna-canal" style="background-color: #cbf5f5; border-radius: 10px;">
+        <section class="fauna-canal" style="background-color: #f6fbfb; border-radius: 10px;">
                     <h2 class="text-center" style="color: #256154;">🐾 Fauna del Canal de Panamá</h2>
                     <h6 class="text-center" style="color: #256154;">El Canal de Panamá alberga una gran diversidad de especies animales, muchas de ellas únicas en la región.</h6>
                 <!-- introducción --> 
@@ -251,9 +313,9 @@
                     </div>
                     <div class="container">
                         <div class="box-b">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Cocodrilo_de_R%C3%ADo.JPG/330px-Cocodrilo_de_R%C3%ADo.JPG" alt="Cocodrilo Americano" class="img-fluid rounded">
-                            <h4>Cocodrilo Americano</h4>
-                            <p>Frecuente en las orillas del canal, este reptil es un gran depredador de la zona.</p>
+                            <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/33194735/original.jpg" alt="Gallineta Morada" class="img-fluid rounded">
+                            <h4>Gallineta Morada</h4>
+                            <p>Ave común en humedales del Canal</p>
                             <a href="https://es.tourismpanama.com/aire-libre-y-naturaleza/parques-naturales/parques-nacionales/parque-nacional-soberania/" style="color: #cbf5f5;">¡Visítame en el parque nacional Soberanía!</a>
                             <!-- el segundo animal, una imagen y su pequeña descripción-->
                         </div>
@@ -277,13 +339,102 @@
                 <div class="row w-100 text-center fs-4" style="color: #256154;">
                     <div class="col-l">
                         <i class="bi bi-exclamation-octagon-fill"></i>
-                        ¡No te olvides! Para jugar nuestro quiz y ganar únicos premios, ve a la sección de arriba y clickea en "Sección informativa"
+                        <p>¡No te olvides! Para jugar nuestro quiz y ganar únicos premios, ve a la sección de arriba y clickea en "Sección informativa"</p>
+                        <a style="color: #256154;" href="quiz-info.html"> ¡Presiona aquí para jugar! </a>
                     </div>
                 </div>  
             </div>
         </section>
-    </main>
-    <footer>
 
+        <!--Seccion turistica-->
+        <section class="turismo" id="Recomendaciones">
+            <h2 style="color: #256154;">🧭 Recomendaciones Turísticas Cerca del Canal de Panamá</h2>
+            <p>Descubre lugares que harán tu visita inolvidable.</p>
+            
+            <!-- 🎉 Actividades -->
+            <div class="subseccion">
+                <h3 style="color: #256154;">🎉 Actividades</h3>
+                <div class="galeria-turismo">
+                
+                <div class="tarjeta-turismo">
+                    <img src="https://elcapitalfinanciero.com/wp-content/uploads/2021/05/Soberania.jpg" alt="Sendero">
+                    <h4 style="color: #256154;">Sendero del Parque Soberanía</h4>
+                    <p>Camina por la selva tropical y observa aves tropicales únicas.</p>
+                </div>
+                
+                <div class="tarjeta-turismo">
+                    <img src="https://elcapitalfinanciero.com/wp-content/uploads/2018/01/9-enero.jpg" alt="Museo Interoceánico">
+                    <h4 style="color: #256154;">Museo del Canal Interoceánico</h4>
+                    <p>Conoce la historia del Canal y su impacto global.</p>
+                </div>
+                
+                <div class="tarjeta-turismo">
+                    <img src="https://panamacanal.tours/wp-content/uploads/2022/06/tour-en-barco-del-canal-de-panama-4.jpg" alt="Paseo en barco">
+                    <h4 style="color: #256154;">Paseo en Barco por el Canal</h4>
+                    <p>Disfruta un recorrido guiado por las esclusas y el lago Gatún.</p>
+                </div>
+                
+                </div>
+            </div>
+            
+            <!-- 🍽️ Restaurantes -->
+            <div class="subseccion" >
+                <h3 style="color: #256154;">🍽️ Restaurantes</h3>
+                <div class="galeria-turismo">
+                
+                <div class="tarjeta-turismo">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/97/40/a3/la-taberna-del-canal.jpg" alt="Restaurante 1">
+                    <h4 style="color: #256154;">La taberna del Canal</h4>
+                    <p>Restaurante en Clayton ~ Paellas, tapas, cocteles y más.</p>
+                    <a href="https://la-taberna-del-canal.cluvi.co/" target="_blank" style="background-color: #256154;">Visitar sitio web</a>
+                </div>
+
+                <div class="tarjeta-turismo">
+                    <img src="https://degusta-thumbnails.b-cdn.net/1_301_r_0.jpg?v=2178" alt="Restaurante 2">
+                    <h4 style="color: #256154;">La Rana Dorada Clayton</h4>
+                    <p>Cerveceros panameños de clase mundial.</p>
+                    <a href="https://www.laranadorada.com/" target="_blank" style="background-color: #256154;">Visitar sitio web</a>
+                </div>
+
+                <div class="tarjeta-turismo">
+                    <img src="https://ciaoragazzigroup.com/wp-content/uploads/2024/08/Ciao-Ragazzi-Clayton.jpg" alt="Restaurante 3">
+                    <h4 style="color: #256154;">Ciao Ragazzi</h4>
+                    <p>Comida auténtica Italiana en Panamá</p>
+                    <a href="https://ciaoragazzigroup.com/" target="_blank" style="background-color: #256154;">Visitar sitio web</a>
+                </div>
+                
+                </div>
+            </div>
+            </section>
+
+            <section class="pronto">
+                <div class="pronto-contenido">
+                    <h2>🚀 Próximamente en CanalFlow</h2>
+                    <p>Estamos trabajando en nuevas funciones increíbles:</p>
+                    <ul>
+                        <li>🌎 Expansión a otras regiones que enfrentan amenazas marinas similares</li>
+                        <li>🧠 Análisis ambiental con inteligencia artificial</li>
+                        <li>📚 Más contenido educativo en cada sección</li>
+                        <li>🌱 Retos interactivos para la comunidad</li>
+                        <li>🧭 Guías personalizadas para explorar el Canal</li>
+                    </ul>
+                    <p class="pronto-texto">¡Muy pronto, en CanalFlow!</p>
+                </div>
+                </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-contenido">
+            <h4>🌐 CanalFlow</h4>
+            <p>Conectando comunidad y conservación en el Canal de Panamá.</p>
+            
+            <ul class="footer-enlaces">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="quiz-info.html">Quiz</a></li>
+            <li><a href="#fauna">Biodiversidad</a></li>
+            <li><a href="#Recomendaciones">Recomendaciones Turísticas</a></li>
+            </ul>
+            
+            <p class="footer-creditos" >© 2025 CanalFlow | Desarrollado por Kadify 💙</p>
+        </div>
     </footer>
 </body>

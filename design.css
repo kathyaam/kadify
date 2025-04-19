@@ -91,7 +91,7 @@ button:hover {
     100% { left: 110%; }
 }
 
-
+/* horarios y precios */
     .container{
     display: flex;
     justify-content: center;
@@ -107,12 +107,14 @@ button:hover {
     max-width: 600px;
     font-family: 'Arial', sans-serif;
     margin: 20px;
+    transition: transform 0.3s;
 }
 
 .schedule {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    transition: transform 0.3s;
 }
 .schedule-item {
     background-color: rgba(0, 0, 0, 0.3);
@@ -135,6 +137,23 @@ button:hover {
     font-size: 1.1em;
 }
 
+.schedule:hover {
+    transform: scale(1.05);
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* dato del dia*/
+.overview{
+    height: 225px;
+    background-color: #cbf5f5;
+}
+
+/*info del nivel de agua*/
+
+/* la caja del fondo*/
 .salud-marina {
     max-width: 800px;
     margin: 20px auto;
@@ -144,13 +163,7 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* dato del dia*/
-.overview{
-    height: 100px;
-    background-color: #cbf5f5;
-}
-
-/* Estilos de la tabla */
+/* Estilos de la tabla de datos */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -169,7 +182,7 @@ th {
 }
 
 
-/* 📌 Gráficas generales */
+/* Gráficas generales */
 .grafica {
     display: flex;
     align-items: flex-end;
@@ -184,7 +197,7 @@ th {
     width: 80%;
 }
 
-/* 📌 Eje Y */
+/* Eje Y */
 .eje-y {
     display: flex;
     flex-direction: column;
@@ -200,7 +213,7 @@ th {
     margin-bottom: 20px;
 }
 
-/* 📌 Barras generales */
+/* Barras generales */
 .barras {
     display: flex;
     align-items: flex-end;
@@ -223,7 +236,7 @@ th {
     opacity: 0.8;
 }
 
-/* 📌 Colores de barras */
+/* Colores de barras */
 .barra.azul {
     background: #0077b6;
 }
@@ -231,7 +244,7 @@ th {
     background: green;
 }
 
-/* 📌 Etiquetas sobre las barras */
+/* Etiquetas sobre las barras */
 .etiqueta {
     position: absolute;
     top: -63px;
@@ -245,12 +258,12 @@ th {
 }
 
 
-/*conversacion marina */
+/*seccion de conversacion marina, contaminación, y especies invasoras */
 .conservacion-marina {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background: white;
+    background: #cbf5f5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -315,13 +328,248 @@ button:hover {
 }
 
 
-    .box-b{
-        color: #e2f7f2;
-        background: linear-gradient(145deg, #6ab7d1, #00b3b3);
-        padding: 25px;
-        border-radius: 10px;
-        width: 80%;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-        margin-bottom: 30px;
-        transition: transform 0.3s;
-    }
+.box-b{
+    color: #e2f7f2;
+    background: linear-gradient(145deg, #6ab7d1, #00b3b3);
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+/* seccion amrina 2 */
+.categoria-carrusel {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.categoria-carrusel h2 {
+    color: #0077b6;
+}
+
+.carrusel-contenedor {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    gap: 16px;
+    padding: 10px;
+}
+
+.carrusel {
+    display: flex;
+}
+
+.item {
+    flex: 0 0 auto;
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 16px;
+    scroll-snap-align: start;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item h3 {
+    margin: 10px 0 5px;
+    color: #0077b6;
+}
+
+.item p {
+    font-size: 14px;
+    color: #444;
+}
+
+
+  /* Estilo para la tarjeta de ayuda */
+.item.ayuda {
+    background-color: #f0fdf4;
+    border: 2px dashed #38b000;
+}
+
+.item.ayuda h3 {
+    color: #007200;
+}
+
+.item.ayuda ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+/*seccion turistica*/
+.turismo {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.turismo h2 {
+    color: #0077b6;
+}
+
+.subseccion {
+    margin-top: 30px;
+}
+
+.subseccion h3 {
+    color: #023e8a;
+    margin-bottom: 20px;
+}
+
+.galeria-turismo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta-turismo {
+    background: #f1f9fb;
+    border-radius: 12px;
+    width: 280px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.tarjeta-turismo:hover {
+    transform: scale(1.03);
+}
+
+.tarjeta-turismo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tarjeta-turismo h4 {
+    margin: 10px 0 5px;
+    color: #0077b6;
+}
+
+.tarjeta-turismo p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.tarjeta-turismo a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 15px;
+    background: #0077b6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.tarjeta-turismo a:hover {
+    background-color: #005f73;
+}
+
+/*seccion de lo que vamos a agregar en el futuro */
+.pronto{
+    background: linear-gradient(to right, #6ab7d1, #00b3b3);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 50px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pronto-contenido h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.pronto-contenido p {
+    font-size: 1.1em;
+}
+
+.pronto-contenido ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pronto-contenido ul li {
+    font-size: 1em;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.pronto-contenido li:hover{
+    transform: scale(1.03);
+}
+
+.pronto-texto {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*footer */
+.footer {
+    background: linear-gradient(145deg, #6ab7d1, #00b3b3);
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer-enlaces {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-enlaces li a {
+    color:#cbf5f5;
+    font-weight: bold;
+}
+
+.footer-enlaces li a:hover {
+    text-decoration: underline;
+}
+
+.footer-creditos {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #c4e3ff;
+}
